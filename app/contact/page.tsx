@@ -1,4 +1,3 @@
-import PulsingBackground from "@/components/pulse";
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,12 +10,13 @@ import {
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Metadata } from "next";
+import GradientBackground from "@/components/gradient-bg";
 
 export default function Page() {
   return (
     <main className="w-full h-screen grid grid-cols-1 md:grid-cols-2 gap-10">
       <div className="w-full h-full min-h-screen flex items-center justify-center relative">
-        <PulsingBackground />
+        <GradientBackground />
         <div className="w-full font-semibold relative text-xl md:text-3xl max-w-3xl uppercase leading-[1.1] text-center">
           your <span className="text-primary1">story</span> starts with a single
           word <span className="text-primary1">&apos;hello&apos;.</span>
