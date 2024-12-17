@@ -2,6 +2,7 @@ import React from "react";
 import CustomButton from "../CustomButton";
 import Image from "next/image";
 import { differenceComponentType } from "@/types/home";
+import { motion } from "framer-motion";
 
 export default function DifferenceComponent({
   heading,
@@ -10,9 +11,16 @@ export default function DifferenceComponent({
   text2,
   classNameImg,
   image,
+  index,
 }: differenceComponentType) {
   return (
-    <div className="w-full rounded-[12px] bg-gradient-to-br from-button-secondary h-full to-button-primary p-1">
+    <motion.div
+      initial={{ opacity: 0.1 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false, amount: 0.4 }}
+      transition={{ duration: 0.7, ease: "easeInOut" }}
+      className={`w-full rounded-[12px] sticky top-1/4 pt-[${index * 2}rem] bg-gradient-to-br from-button-secondary h-full to-button-primary p-1`}
+    >
       <div className="grid grid-cols-2 max-md:grid-cols-1 h-full w-full rounded-[12px] bg-gradient-to-br p-6 gap-6 from-white to-bg3">
         <div className="w-full flex flex-col justify-between">
           <div className="flex flex-col gap-4">
@@ -40,6 +48,6 @@ export default function DifferenceComponent({
           sizes="100%"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

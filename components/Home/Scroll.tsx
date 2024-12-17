@@ -14,7 +14,7 @@ export default function Scroll() {
   return (
     <section className="w-full flex flex-col gap-7 py-10 overflow-clip border-b border-b-[rgba(255,180,46,0.30)] [background:radial-gradient(39.56%_66.68%_at_50%_116.68%,rgba(255,180,46,0.30)_0%,rgba(255,255,255,0.30)_100%),#FFF;]">
       <div className="text-center font-semibold">
-        Stories we&apos;ve told so for...
+        Stories we&apos;ve told for...
       </div>
       <Marquee className="[--duration:40s] h-14">
         {/* <div className="[padding-block:1rem] flex flex-col gap-[2vw] h-max flex-nowrap animate-infinite-scroll-y direction-reverse"> */}

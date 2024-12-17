@@ -34,6 +34,7 @@ export interface storyTelling {
 }
 
 export interface differenceComponentType {
+  index: number;
   heading: string;
   subheading: string;
   text1: string;
