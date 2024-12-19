@@ -15,10 +15,10 @@ export default function DifferenceComponent({
 }: differenceComponentType) {
   return (
     <motion.div
-      initial={{ opacity: 0.1 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.4 }}
-      transition={{ duration: 0.7, ease: "easeInOut" }}
+      // initial={{ opacity: 0.1 }}
+      // whileInView={{ opacity: 1 }}
+      // viewport={{ once: false, amount: 0.4 }}
+      // transition={{ duration: 0.7, ease: "easeInOut" }}
       className={`w-full rounded-[12px] sticky top-1/4 pt-[${index * 2}rem] bg-gradient-to-br from-button-secondary h-full to-button-primary p-1`}
     >
       <div className="grid grid-cols-2 max-md:grid-cols-1 h-full w-full rounded-[12px] bg-gradient-to-br p-6 gap-6 from-white to-bg3">
